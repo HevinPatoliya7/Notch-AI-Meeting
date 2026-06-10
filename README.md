@@ -1,66 +1,261 @@
 # Notch
 
-A landing page for **Notch** — a fictional AI meeting-notes product for engineering teams. Built as a portfolio piece to demonstrate SaaS landing-page design and front-end craft.
+A modern SaaS landing page for **Notch** — a fictional AI-powered meeting notes platform designed for engineering teams.
 
-Linear-style dark aesthetic, sharp typography, monospace accents, custom product mockup in the hero.
+Built as a portfolio project to showcase modern front-end development, UI/UX design, responsive layouts, animations, and premium SaaS aesthetics inspired by Linear, Raycast, and modern developer tools.
 
-## Stack
+![Notch Preview](https://notch-main.vercel.app/og-image.png)
 
-- React 18 + TypeScript
-- Vite
-- Tailwind CSS
-- Framer Motion (scroll-driven reveals)
-- Lucide React (icons)
-- Manrope + JetBrains Mono (Google Fonts)
+## 🚀 Live Demo
 
-**No backend, no API keys, no env vars.** Pure static site.
+🌐 **Website:** https://notch-main.vercel.app
 
-## Sections
+## 👨‍💻 Developer
 
-1. Fixed navbar (transparent → blurred on scroll)
-2. Hero with custom product mockup (transcript ↔ AI-extracted notes, two-pane window)
-3. Logo strip (marquee of fictional companies)
-4. Features (6-card grid, one featured)
-5. How it works (3 numbered steps with mono code annotations)
-6. Pricing (3 tiers, "Team" featured)
-7. Testimonials (3 fake quotes)
-8. Final CTA (big closing pitch)
-9. Footer (4 link columns + status pill + credits)
+**Hevin Patoliya**
 
-## Run locally
+* LinkedIn: https://www.linkedin.com/in/hevinpatoliya9106011772/
+* Portfolio: https://mrhevin.vercel.app/
+* GitHub: https://github.com/HevinPatoliya7/
+
+---
+
+## 📖 About The Project
+
+Notch helps engineering teams automatically transform meeting conversations into structured notes, action items, summaries, and decisions using AI.
+
+This project is completely fictional and created for portfolio and learning purposes only.
+
+The goal was to build a premium SaaS landing page featuring:
+
+* Modern dark UI
+* Smooth animations
+* Clean typography
+* Responsive design
+* Product-focused storytelling
+* Conversion-oriented layout
+
+---
+
+## ✨ Features
+
+### 🎯 Fixed Navigation
+
+* Transparent navbar
+* Blur effect on scroll
+* Smooth section navigation
+
+### 💬 Interactive Hero Section
+
+* Custom AI product mockup
+* Transcript panel
+* AI-generated notes panel
+* Call-to-action buttons
+
+### 🏢 Logo Marquee
+
+* Animated strip of fictional companies
+* Infinite scrolling effect
+
+### ⚡ Feature Showcase
+
+* 6 feature cards
+* Featured highlight card
+* Responsive grid layout
+
+### 🔄 How It Works
+
+Three-step onboarding flow:
+
+1. Record meetings
+2. Let AI process discussions
+3. Share structured notes instantly
+
+### 💰 Pricing Section
+
+* Starter Plan
+* Team Plan (Featured)
+* Enterprise Plan
+
+### ⭐ Testimonials
+
+* Realistic SaaS-style customer feedback
+* Responsive card layout
+
+### 📢 Final CTA
+
+* High-converting call-to-action section
+* Strong product positioning
+
+### 📄 Footer
+
+* Multiple link groups
+* Product resources
+* Status indicator
+* Developer credits
+
+---
+
+## 🛠 Tech Stack
+
+### Frontend
+
+* React 18
+* TypeScript
+* Vite
+
+### Styling
+
+* Tailwind CSS
+
+### Animation
+
+* Framer Motion
+
+### Icons
+
+* Lucide React
+
+### Fonts
+
+* Manrope
+* JetBrains Mono
+
+---
+
+## 📂 Project Structure
+
+```bash
+src/
+├── components/
+├── sections/
+│   ├── Nav.tsx
+│   ├── Hero.tsx
+│   ├── LogoStrip.tsx
+│   ├── Features.tsx
+│   ├── HowItWorks.tsx
+│   ├── Pricing.tsx
+│   ├── Testimonials.tsx
+│   ├── CTA.tsx
+│   └── Footer.tsx
+├── App.tsx
+└── main.tsx
+```
+
+---
+
+## ⚙️ Installation
+
+Clone the repository:
+
+```bash
+git clone <your-repository-url>
+```
+
+Navigate to the project folder:
+
+```bash
+cd notch
+```
+
+Install dependencies:
 
 ```bash
 npm install
-npm run dev      # http://localhost:5173
-npm run build    # production build → /dist
-npm run preview  # serve /dist locally
 ```
 
-## Deploy to Vercel
-
-Push to GitHub, import the repo at [vercel.com/new](https://vercel.com/new), click Deploy. That's it — no env vars to configure.
-
-Or via CLI:
+Run development server:
 
 ```bash
-npm i -g vercel       # or use `npx vercel`
+npm run dev
+```
+
+Open:
+
+```bash
+http://localhost:5173
+```
+
+---
+
+## 📦 Production Build
+
+Build the project:
+
+```bash
+npm run build
+```
+
+Preview build:
+
+```bash
+npm run preview
+```
+
+---
+
+## 🚀 Deploy on Vercel
+
+### Method 1: GitHub
+
+1. Push project to GitHub
+2. Visit https://vercel.com/new
+3. Import repository
+4. Click **Deploy**
+
+No environment variables are required.
+
+### Method 2: Vercel CLI
+
+```bash
+npm install -g vercel
+
 vercel --prod
 ```
 
-## Customisation pointers
+---
 
-| Want to change | File |
-|---|---|
-| Product name, nav links | `src/sections/Nav.tsx` |
-| Hero headline + mockup content | `src/sections/Hero.tsx` |
-| Fictional company names | `src/sections/LogoStrip.tsx` |
-| Feature list | `src/sections/Features.tsx` (`FEATURES` array) |
-| Pricing tiers | `src/sections/Pricing.tsx` (`TIERS` array) |
-| Testimonials | `src/sections/Testimonials.tsx` (`QUOTES` array) |
-| Footer links / credits | `src/sections/Footer.tsx` |
-| Brand colors, fonts | `tailwind.config.js` + `src/index.css` |
-| Page metadata (title, OG tags) | `index.html` |
+## 🎨 Customization Guide
 
-## Credits
+| Change         | File                          |
+| -------------- | ----------------------------- |
+| Product Name   | src/sections/Nav.tsx          |
+| Hero Content   | src/sections/Hero.tsx         |
+| Company Logos  | src/sections/LogoStrip.tsx    |
+| Features       | src/sections/Features.tsx     |
+| Pricing Plans  | src/sections/Pricing.tsx      |
+| Testimonials   | src/sections/Testimonials.tsx |
+| Footer Links   | src/sections/Footer.tsx       |
+| Colors & Fonts | tailwind.config.js            |
+| Metadata & SEO | index.html                    |
 
-Designed & built by **Harsh Goyal** as a portfolio piece. Notch is not a real product.
+---
+
+## 🎯 Learning Outcomes
+
+This project demonstrates:
+
+* Modern React Architecture
+* TypeScript Best Practices
+* Component-Based Design
+* Tailwind CSS Expertise
+* Responsive Web Design
+* Animation Integration
+* SaaS Landing Page Design
+* Production Deployment Workflow
+
+---
+
+## 📜 Disclaimer
+
+Notch is a fictional product created solely for educational and portfolio purposes. Any companies, testimonials, pricing plans, and product claims shown in the project are not real.
+
+---
+
+## ❤️ Credits
+
+Designed and Developed by **Hevin Patoliya**
+
+If you found this project helpful, feel free to connect with me on LinkedIn:
+
+https://www.linkedin.com/in/hevinpatoliya9106011772/
